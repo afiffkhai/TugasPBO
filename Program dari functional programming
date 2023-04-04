@@ -1,0 +1,14 @@
+# Contoh program FP: menjumlahkan bilangan genap dari 1 hingga 10
+numbers = range(1, 15)
+
+def is_even(number):
+    return number % 2 == 0
+
+def sum_numbers(numbers):
+    return sum(numbers)
+
+even_numbers = [number for number in numbers if is_even(number)]
+sum_of_even_numbers = sum_numbers(even_numbers)
+
+print("Bilangan genap dari 1 hingga 10:", even_numbers)
+print("Jumlah bilangan genap dari 1 hingga 10:", sum_of_even_numbers)
